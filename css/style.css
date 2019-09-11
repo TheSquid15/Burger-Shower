@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
-body { 
+body {
+    background-image: url("../img/plant.jpg");
     background-color:rgb(149, 229, 255);
     font-family: 'VT323', monospace;
     margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #holyScriptures {
@@ -30,7 +33,6 @@ body {
     top: 0;
     left: 0;
     display: flex;
-    background-image: url('../img/holy light.png');
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -38,7 +40,7 @@ body {
 }
 
 #shower {  
-    background-image: url('../img/the-hamburger.png'), url('../img/the hamburger 3.png'), url('../img/the hamburger 4.png');
+    background-image: url('../img/banana.png'), url('../img/banana.png'), url('../img/banana.png');
     height: 100%;
     width: 100%;
     position: absolute;

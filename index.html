@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132838811-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132838811-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burger Shower</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/The biggest of burgers.png">
+    <script>
+        var randomNumber = Math.floor((Math.random() * 50) + 1)
+    </script>
+</head>
+<body>
+  <h1 id="holyScriptures">DO YOU BELIEVE IN THE ALMIGHTY BURGER?</h1>
+  <div id="theBiggestHamburger">
+    <img id="theHolyBurger" src="img/The biggest of burgers.png" alt="Pixelated hamburger">
+  </div>
+  <div id="shower"></div>
+  <div id="clouds"></div>
+  <audio autoplay loop  id="playAudio">
+    <source src="audio/cats on mars.mp3" type="audio/mpeg">
+  </audio>
+  <iframe src="audio/cats on mars.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+  <div id="flightMap">
+    <img id="theLegendarySuperBurger" src="img/theGoldenBurger.png" alt="it's a flying golden burger">
+  </div>
+  <script>
+    if(randomNumber == 11) {
+      console.log(randomNumber)
+      document.getElementById('theHolyBurger').src = 'img/theGoldenBurger.png'
+      document.getElementById('holyScriptures').innerHTML = 'You believed hard enough, this is your reward.'
+    }
+    else {
+      console.log(randomNumber)
+    }
+
+    function legendarySuperBurger() {
+      var legendarySuperBurger = Math.floor((Math.random() * 100) + 1)
+      console.log(legendarySuperBurger)
+
+      if(legendarySuperBurger == 25) {
+        document.getElementById('theLegendarySuperBurger').classList.remove("active");
+        document.getElementById('theLegendarySuperBurger').className += "active";
+        console.clear();
+      }
+
+      else {
+        document.getElementById('theLegendarySuperBurger').classList.remove("active");
+        console.clear();
+      }
+    }
+    setInterval(legendarySuperBurger, 5000);
+  </script>
+  <script>
+      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if(!isChrome){
+          document.getElementById('iframeAudio').remove()
+        }
+      else{
+        document.getElementById('playAudio').remove() 
+      }
+  </script>
+</body>
+</html>

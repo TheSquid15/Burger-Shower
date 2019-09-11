@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body { 
+    background-color:rgb(149, 229, 255);
+    font-family: 'VT323', monospace;
+    margin: 0;
+}
+
+#holyScriptures {
+    position: absolute;
+    font-size: 142px;
+    text-transform: uppercase;
+    width: 1260px;
+    text-align: center;
+    z-index: 500;
+    top: 50%;
+    left: 50%;
+    margin: -142px 0 0 -630px;
+    opacity: 0;
+    -webkit-animation: rainbow 0.7s linear infinite, fade-out 25s linear;
+    -moz-animation: rainbow 0.7s linear infinite, fade-out 25s linear;
+    -ms-animation: rainbow 0.7s linear infinite, fade-out 25s linear;
+    animation: rainbow 0.7s linear infinite, fade-out 25s linear;
+}
+
+#theBiggestHamburger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-image: url('../img/holy light.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#shower {  
+    background-image: url('../img/the-hamburger.png'), url('../img/the hamburger 3.png'), url('../img/the hamburger 4.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:1;
+    -webkit-animation: shower 1000s linear infinite;
+    -moz-animation: shower 1000s linear infinite;
+    -ms-animation: shower 1000s linear infinite;
+    animation: shower 1000s linear infinite;
+    z-index: 1000;
+}
+
+#clouds {
+    background-image: url('../img/clouds-large.png'), url('../img/clouds-medium.png'), url('../img/clouds-small.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: clouds 3000s linear infinite;
+    -moz-animation: clouds 3000s linear infinite;
+    -ms-animation: clouds 3000s linear infinite;
+    animation: clouds 3000s linear infinite;
+}
+
+#flightMap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+#theLegendarySuperBurger {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: -1000px;
+    margin: -25px 0 0 0;
+    z-index: 9999;
+}
+
+.active {
+    -webkit-animation: flyBy 5s linear;
+    -moz-animation: flyBy 5s linear;
+    -ms-animation: flyBy 5s linear;
+    animation: flyBy 5s linear;
+}
+
+@keyframes flyBy {
+    0% {
+        left: -1000px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 5000px;
+        transform: rotate(1264deg);
+    }          
+}
+@-moz-keyframes flyBy {
+    0% {
+        left: -1000px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 5000px;
+        transform: rotate(1264deg);
+    }          
+}
+@-webkit-keyframes flyBy {
+    0% {
+        left: -1000px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 5000px;
+        transform: rotate(1264deg);
+    }          
+}
+@-ms-keyframes flyBy {
+    0% {
+        left: -1000px;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 5000px;
+        transform: rotate(1264deg);
+    }          
+}   
+
+
+@keyframes shower {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 100000px 100000px, -60000px 70000px, 40000px 60000px;}          
+}
+@-moz-keyframes shower {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 100000px 100000px, -60000px 70000px, 40000px 60000px;}          
+}
+@-webkit-keyframes shower {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 100000px 100000px, -60000px 70000px, 40000px 60000px;}          
+}
+@-ms-keyframes shower {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 100000px 100000px, -60000px 70000px, 40000px 60000px;}          
+}   
+
+@keyframes clouds {
+    0% {background-position: 0px 0px, 0px 0px, 0px -100px;}
+    100% {background-position: 100000px 0px, -60000px 0px, 40000px 0px;}          
+}
+@-moz-keyframes clouds {
+    0% {background-position: 0px 0px, 0px 0px, 0px -100px;}
+    100% {background-position: 100000px 0px, -60000px 0px, 40000px 0px;}          
+}
+@-webkit-keyframes clouds {
+    0% {background-position: 0px 0px, 0px 0px, 0px -100px;}
+    100% {background-position: 100000px 0px, -60000px 0px, 40000px 0px;}          
+}
+@-ms-keyframes clouds {
+    0% {background-position: 0px 0px, 0px 0px, 0px -100px;}
+    100% {background-position: 100000px 0px, -60000px 0px, 40000px 0px;}          
+}   
+
+@keyframes rainbow {
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+    30%{color: CadetBlue;}
+	40%{color: yellow;}
+    50%{color: coral;}
+	60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+	100%{color: orange;}          
+}
+@-moz-keyframes rainbow {
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+    30%{color: CadetBlue;}
+	40%{color: yellow;}
+    50%{color: coral;}
+	60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+	100%{color: orange;}         
+}
+@-webkit-keyframes rainbow {
+    00%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+    30%{color: CadetBlue;}
+	40%{color: yellow;}
+    50%{color: coral;}
+	60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+	100%{color: orange;}          
+}
+@-ms-keyframes rainbow {
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+    30%{color: CadetBlue;}
+	40%{color: yellow;}
+    50%{color: coral;}
+	60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+	100%{color: orange;}          
+}   
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}          
+}
+@-moz-keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}          
+}
+@-webkit-keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}          
+}
+@-ms-keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}          
+}   
+
+@media screen and (max-width: 1260px){
+    #holyScriptures {
+        width: 720px;
+        font-size: 86px;
+        margin: -86px 0 0 -360px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #holyScriptures {
+        width: 420px;
+        font-size: 58px;
+        margin: -87px 0 0 -210px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #holyScriptures {
+        width: 280px;
+        font-size: 36px;
+        margin: -54px 0 0 -140px;
+    }
+
+    #theHolyBurger {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #holyScriptures {
+        width: 160px;
+        font-size: 28px;
+        margin: -56px 0 0 -80px;
+    }
+    
+    #theHolyBurger {
+        width: 100px;
+    }
+}
